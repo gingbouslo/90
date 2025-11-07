@@ -122,7 +122,7 @@ EOF
 
 # ========== 守护进程 ==========
 run_background_loop() {
-  echo "🚀 Starting TUIC server..."
+  echo "Starting server..."
   while true; do
     "$TUIC_BIN" -c "$SERVER_TOML" >/dev/null 2>&1 || true
     echo "⚠️ TUIC crashed. Restarting in 5s..."
